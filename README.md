@@ -23,7 +23,7 @@ due to awareness and guidance gaps among students and parents.
 
 ⚠️ This results in wrong academic choices, dropouts, or migration to private institutions.
 
-#**💡 Proposed Digital Solution**<br/>
+**💡 Proposed Digital Solution**<br/>
 ✅ 🎯 **Aptitude & Interest-Based Suggestions –** helping students pick the right stream.<br/>
 ✅ 🗺️ **Course-to-Career Mapping –** degrees → skills → jobs → higher studies.<br/>
 ✅ 🏛️ **Nearby Govt. College Directory –** courses, cutoffs, facilities in one place.<br/>
