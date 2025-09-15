@@ -24,10 +24,10 @@ due to awareness and guidance gaps among students and parents.
 ⚠️ This results in wrong academic choices, dropouts, or migration to private institutions.
 
 #**💡 Proposed Digital Solution**
-✅ 🎯 **Aptitude & Interest-Based Suggestions –** helping students pick the right stream.
-✅ 🗺️ **Course-to-Career Mapping –** degrees → skills → jobs → higher studies.
-✅ 🏛️ **Nearby Govt. College Directory –** courses, cutoffs, facilities in one place.
-✅ 📅 **Admission, Exam & Scholarship Tracker –** never miss key deadlines.
+✅ 🎯 **Aptitude & Interest-Based Suggestions –** helping students pick the right stream.<br/>
+✅ 🗺️ **Course-to-Career Mapping –** degrees → skills → jobs → higher studies.<br/>
+✅ 🏛️ **Nearby Govt. College Directory –** courses, cutoffs, facilities in one place.<br/>
+✅ 📅 **Admission, Exam & Scholarship Tracker –** never miss key deadlines.<br/>
 ✅ 👤 **Personalized Guidance & Customization –** Personalised Dashboard and Past Based recommendations.
 ✅ 📝 **Feedback System –** continuous improvement of suggestions.
 ✅ 🌐 **Regional Language Support –** inclusive access for rural students.
