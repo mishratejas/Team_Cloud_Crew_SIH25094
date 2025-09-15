@@ -1,12 +1,12 @@
 **SMART INDIA HACKATHON 2025**
 👨‍💻 Team Members – Cloud Crew
-Our multidisciplinary team brings both technical expertise and student perspective:
-**1.Tejas Mishra**
-**2.Vansh Saini**
-**3.Arpit Goyal**
-**4.Anupam**
-**5.Desh Deepak**
-**6.Anupam**
+Our multidisciplinary team brings both technical expertise and student perspective:<br/>
+**1.Tejas Mishra**<br/>
+**2.Vansh Saini**<br/>
+**3.Arpit Goyal**<br/>
+**4.Anupam**<br/>
+**5.Desh Deepak**<br/>
+**6.Anupam**<br/>
 
 **PROBLEM STATEMENT : ONE-STOP PERSONALIZED CAREER ADVISOR**
 #**📌 PS-Context**
@@ -23,14 +23,14 @@ due to awareness and guidance gaps among students and parents.
 
 ⚠️ This results in wrong academic choices, dropouts, or migration to private institutions.
 
-#**💡 Proposed Digital Solution**
+#**💡 Proposed Digital Solution**<br/>
 ✅ 🎯 **Aptitude & Interest-Based Suggestions –** helping students pick the right stream.<br/>
 ✅ 🗺️ **Course-to-Career Mapping –** degrees → skills → jobs → higher studies.<br/>
 ✅ 🏛️ **Nearby Govt. College Directory –** courses, cutoffs, facilities in one place.<br/>
 ✅ 📅 **Admission, Exam & Scholarship Tracker –** never miss key deadlines.<br/>
-✅ 👤 **Personalized Guidance & Customization –** Personalised Dashboard and Past Based recommendations.
-✅ 📝 **Feedback System –** continuous improvement of suggestions.
-✅ 🌐 **Regional Language Support –** inclusive access for rural students.
-✅ 🤖 **AI Career Counselor Chatbot –** 24/7 career guidance.
-✅ 👥 **Community & Mentorship –** peer + expert-driven support.
-✅ 🔐 D**igiLocker Integration –** secure access to verified academic docs.
+✅ 👤 **Personalized Guidance & Customization –** Personalised Dashboard and Past Based recommendations.<br/>
+✅ 📝 **Feedback System –** continuous improvement of suggestions.<br/>
+✅ 🌐 **Regional Language Support –** inclusive access for rural students.<br/>
+✅ 🤖 **AI Career Counselor Chatbot –** 24/7 career guidance.<br/>
+✅ 👥 **Community & Mentorship –** peer + expert-driven support.<br/>
+✅ 🔐 D**igiLocker Integration –** secure access to verified academic docs.<br/>
