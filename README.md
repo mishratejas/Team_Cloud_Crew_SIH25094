@@ -6,7 +6,7 @@ Our multidisciplinary team brings both technical expertise and student perspecti
 **3.Arpit Goyal**<br/>
 **4.Anupam**<br/>
 **5.Desh Deepak**<br/>
-**6.Anupam**<br/>
+**6.Shreya Saxena**<br/>
 
 **PROBLEM STATEMENT : ONE-STOP PERSONALIZED CAREER ADVISOR**
 #**📌 PS-Context**
