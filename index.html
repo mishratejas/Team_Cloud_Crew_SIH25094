@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerPath - Find Your Future</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+
+    <header>
+        <nav class="container">
+            <a href="#" class="logo">CareerPath</a>
+            <ul class="nav-links">
+                <li><a href="#landing" class="nav-link active">Home</a></li>
+                <li><a href="#assessment" class="nav-link">Assessment</a></li>
+                <li><a href="#opportunities" class="nav-link">Opportunities</a></li>
+            </ul>
+            <div class="nav-actions">
+                <i class="theme-toggle" data-feather="moon"></i>
+                <button class="cta-nav">Get Started</button>
+            </div>
+            <div class="hamburger">
+                <i data-feather="menu"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="landing" class="page active">
+            <div class="hero container">
+                <div class="hero-text">
+                    <h1>Find Your Path, Shape Your Future.</h1>
+                    <p>Our AI-powered platform helps you discover your perfect career. Take our assessment to get personalized guidance and a clear roadmap for success.</p>
+                    <button class="cta-button">Get Started <i data-feather="arrow-right"></i></button>
+                </div>
+                <div class="hero-image">
+                    <img src="https://i.ibb.co/bF0GHgV/undraw-career-development-re-sv9-U.png" alt="Students exploring careers">
+                </div>
+            </div>
+        </section>
+
+        <section id="assessment" class="page">
+            <div class="assessment-container container">
+                <h2>Career Assessment</h2>
+                <p>Complete the steps below to find career paths tailored just for you.</p>
+                <div class="progress-bar">
+                    <div class="progress-bar-fill"></div>
+                </div>
+
+                <form class="assessment-form">
+                    <div class="form-card">
+                        <h3><i data-feather="user"></i> Basic Info</h3>
+                        <div class="form-group">
+                            <input type="text" placeholder="Full Name" required>
+                            <input type="number" placeholder="Age" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Highest Education (e.g., High School)" required>
+                            <input type="text" placeholder="Location (e.g., New Delhi, India)" required>
+                        </div>
+                    </div>
+
+                    <div class="form-card">
+                        <h3><i data-feather="tool"></i> Your Skills</h3>
+                        <p>Select your top 5 skills.</p>
+                        <div class="skills-grid">
+                            <label><input type="checkbox" name="skill"><span>Python</span></label>
+                            <label><input type="checkbox" name="skill"><span>Graphic Design</span></label>
+                            <label><input type="checkbox" name="skill"><span>Public Speaking</span></label>
+                            <label><input type="checkbox" name="skill"><span>Data Analysis</span></label>
+                            <label><input type="checkbox" name="skill"><span>Project Management</span></label>
+                            <label><input type="checkbox" name="skill"><span>Video Editing</span></label>
+                             <label><input type="checkbox" name="skill"><span>Content Writing</span></label>
+                            <label><input type="checkbox" name="skill"><span>SEO</span></label>
+                        </div>
+                    </div>
+
+                    <div class="form-card">
+                        <h3><i data-feather="heart"></i> Your Interests</h3>
+                        <p>Describe what you love doing in your free time.</p>
+                        <textarea placeholder="e.g., I enjoy building things, solving puzzles, and reading about technology..."></textarea>
+                    </div>
+
+                    <div class="form-card">
+                        <h3><i data-feather="sliders"></i> Preferences</h3>
+                        <div class="form-group">
+                            <select>
+                                <option disabled selected>Preferred Industry</option>
+                                <option>Technology</option>
+                                <option>Healthcare</option>
+                                <option>Creative Arts</option>
+                                <option>Finance</option>
+                            </select>
+                            <div class="career-type">
+                                <p>Career Type:</p>
+                                <label><input type="checkbox" name="type"><span>Remote</span></label>
+                                <label><input type="checkbox" name="type"><span>In-Office</span></label>
+                                <label><input type="checkbox" name="type"><span>Hybrid</span></label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="submit-button">Find My Career <i data-feather="search"></i></button>
+                </form>
+            </div>
+        </section>
+
+        <section id="dashboard" class="page">
+            <div class="dashboard-container container">
+                <h2>Your Career Recommendations</h2>
+                <p>Based on your profile, here are your top career matches.</p>
+                <div class="results-grid">
+                    <div class="career-card">
+                        <div class="card-header">
+                            <h4>Full-Stack Developer</h4>
+                            <div class="fit-score">92% Fit</div>
+                        </div>
+                        <p>Build end-to-end web applications, from the user interface to the server-side logic.</p>
+                        <div class="tags">
+                            <span>Python</span>
+                            <span>JavaScript</span>
+                            <span>APIs</span>
+                        </div>
+                        <button class="roadmap-button">View Roadmap <i data-feather="git-merge"></i></button>
+                    </div>
+                    <div class="career-card">
+                        <div class="card-header">
+                            <h4>UX/UI Designer</h4>
+                            <div class="fit-score" style="--score-bg: #17A2B8;">85% Fit</div>
+                        </div>
+                        <p>Design user-friendly and visually appealing interfaces for websites and applications.</p>
+                        <div class="tags">
+                            <span>Figma</span>
+                            <span>User Research</span>
+                            <span>Prototyping</span>
+                        </div>
+                        <button class="roadmap-button">View Roadmap <i data-feather="git-merge"></i></button>
+                    </div>
+                    <div class="career-card">
+                        <div class="card-header">
+                            <h4>Data Analyst</h4>
+                            <div class="fit-score" style="--score-bg: #28a745;">78% Fit</div>
+                        </div>
+                        <p>Analyze large datasets to identify trends and help organizations make better decisions.</p>
+                        <div class="tags">
+                            <span>SQL</span>
+                            <span>Excel</span>
+                            <span>Tableau</span>
+                        </div>
+                        <button class="roadmap-button">View Roadmap <i data-feather="git-merge"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="roadmap" class="page">
+             <div class="roadmap-container container">
+                <h2>Roadmap: <span class="career-title-placeholder">Full-Stack Developer</span></h2>
+                 <p>An interactive guide to your career. Click on nodes to explore.</p>
+                <div class="knowledge-graph">
+                    <img src="https://i.ibb.co/3Wf2W0T/knowledge-graph-placeholder.png" alt="Career roadmap knowledge graph">
+                </div>
+             </div>
+        </section>
+
+
+        <section id="opportunities" class="page">
+            <div class="opportunities-container container">
+                <h2>Find Opportunities</h2>
+                <p>Discover internships, jobs, and courses to kickstart your journey.</p>
+                
+                <div class="filters">
+                    <input type="text" placeholder="Filter by skill or title...">
+                    <select>
+                        <option>All Locations</option>
+                        <option>Remote</option>
+                        <option>New York, USA</option>
+                        <option>Bengaluru, India</option>
+                    </select>
+                    <button><i data-feather="filter"></i> Filter</button>
+                </div>
+
+                <div class="opportunities-grid">
+                    <div class="opportunity-card">
+                        <div class="card-header">
+                            <h5>Frontend Developer Intern</h5>
+                            <span>Google</span>
+                        </div>
+                        <div class="card-body">
+                            <p><i data-feather="map-pin"></i> Remote</p>
+                            <p><i data-feather="briefcase"></i> Internship</p>
+                        </div>
+                        <div class="tags">
+                            <span>React</span>
+                            <span>CSS</span>
+                            <span>TypeScript</span>
+                        </div>
+                        <a href="#" class="apply-button">Apply Now</a>
+                    </div>
+                    <div class="opportunity-card">
+                         <div class="card-header">
+                            <h5>UX Design Course</h5>
+                            <span>Coursera</span>
+                        </div>
+                        <div class="card-body">
+                            <p><i data-feather="book-open"></i> Online Course</p>
+                            <p><i data-feather="clock"></i> Self-Paced</p>
+                        </div>
+                        <div class="tags">
+                            <span>Figma</span>
+                            <span>UI Principles</span>
+                        </div>
+                        <a href="#" class="apply-button">Enroll</a>
+                    </div>
+                     </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="chatbot-container">
+        <div class="chat-bubble">
+            <i data-feather="message-square"></i>
+        </div>
+        <div class="chat-window">
+            <div class="chat-header">
+                <h5>AI Career Advisor</h5>
+                <button class="close-chat"><i data-feather="x"></i></button>
+            </div>
+            <div class="chat-body">
+                <div class="message assistant">
+                    <p>Hi there! How can I help you find your path today?</p>
+                </div>
+                <div class="message user">
+                    <p>What skills do I need for UX design?</p>
+                </div>
+                <div class="message assistant">
+                    <p>For UX Design, you'll want to focus on skills like User Research, Wireframing, Prototyping, and tools like Figma or Sketch. Would you like me to find some courses for you?</p>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" placeholder="Ask a question...">
+                <button><i data-feather="send"></i></button>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        feather.replace(); // To initialize Feather Icons
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
