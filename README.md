@@ -1,16 +1,17 @@
-#**SMART INDIA HACKATHON 2025**
+**SMART INDIA HACKATHON 2025**
 👨‍💻 Team Members – Cloud Crew
 Our multidisciplinary team brings both technical expertise and student perspective:
-  **1.Tejas Mishra**
-  **2.Vansh Saini**
-  **3.Arpit Goyal**
-  **4.Anupam**
-  **5.Desh Deepak**
-  **6.Anupam**
+**1.Tejas Mishra**
+**2.Vansh Saini**
+**3.Arpit Goyal**
+**4.Anupam**
+**5.Desh Deepak**
+**6.Anupam**
 
-#**PROBLEM STATEMENT : ONE-STOP PERSONALIZED CAREER ADVISOR**
+**PROBLEM STATEMENT : ONE-STOP PERSONALIZED CAREER ADVISOR**
 #**📌 PS-Context**
-Government degree colleges in India face declining enrollments not because of poor infrastructure or teaching quality, but due to awareness and guidance gaps among students and parents.
+Government degree colleges in India face declining enrollments not because of poor infrastructure or teaching quality, but
+due to awareness and guidance gaps among students and parents.
 
 👨‍👩‍👧 Families often don’t understand the long-term value of graduation, leading to preference for short-term skill courses or costly private colleges.
 
@@ -23,7 +24,6 @@ Government degree colleges in India face declining enrollments not because of po
 ⚠️ This results in wrong academic choices, dropouts, or migration to private institutions.
 
 #**💡 Proposed Digital Solution**
-
 ✅ 🎯 **Aptitude & Interest-Based Suggestions –** helping students pick the right stream.
 ✅ 🗺️ **Course-to-Career Mapping –** degrees → skills → jobs → higher studies.
 ✅ 🏛️ **Nearby Govt. College Directory –** courses, cutoffs, facilities in one place.
