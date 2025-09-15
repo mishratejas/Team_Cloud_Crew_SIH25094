@@ -3,22 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CareerPath - Find Your Future</title>
-    <link rel="stylesheet" href="style.css">
+    <title>CareerPath - AI-Powered Career Guidance</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header>
         <nav class="container">
-            <a href="#" class="logo">CareerPath</a>
+            <a href="#" class="logo">
+                <i data-feather="compass"></i> CareerPath
+            </a>
             <ul class="nav-links">
                 <li><a href="#landing" class="nav-link active">Home</a></li>
                 <li><a href="#assessment" class="nav-link">Assessment</a></li>
+                <li><a href="#dashboard" class="nav-link">Dashboard</a></li>
                 <li><a href="#opportunities" class="nav-link">Opportunities</a></li>
             </ul>
             <div class="nav-actions">
+                <div class="language-selector">
+                    <i data-feather="globe"></i>
+                    <div class="language-dropdown">
+                        <div class="language-option" data-lang="en">English</div>
+                        <div class="language-option" data-lang="hi">Hindi</div>
+                        <div class="language-option" data-lang="te">Telugu</div>
+                        <div class="language-option" data-lang="ta">Tamil</div>
+                    </div>
+                </div>
                 <i class="theme-toggle" data-feather="moon"></i>
                 <button class="cta-nav">Get Started</button>
             </div>
@@ -34,6 +47,22 @@
                 <div class="hero-text">
                     <h1>Find Your Path, Shape Your Future.</h1>
                     <p>Our AI-powered platform helps you discover your perfect career. Take our assessment to get personalized guidance and a clear roadmap for success.</p>
+                    
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-value">500+</div>
+                            <div class="stat-label">Career Paths</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">10K+</div>
+                            <div class="stat-label">Students Helped</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">95%</div>
+                            <div class="stat-label">Satisfaction Rate</div>
+                        </div>
+                    </div>
+                    
                     <button class="cta-button">Get Started <i data-feather="arrow-right"></i></button>
                 </div>
                 <div class="hero-image">
@@ -61,6 +90,10 @@
                             <input type="text" placeholder="Highest Education (e.g., High School)" required>
                             <input type="text" placeholder="Location (e.g., New Delhi, India)" required>
                         </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email Address" required>
+                            <input type="text" placeholder="Phone Number (optional)">
+                        </div>
                     </div>
 
                     <div class="form-card">
@@ -73,8 +106,12 @@
                             <label><input type="checkbox" name="skill"><span>Data Analysis</span></label>
                             <label><input type="checkbox" name="skill"><span>Project Management</span></label>
                             <label><input type="checkbox" name="skill"><span>Video Editing</span></label>
-                             <label><input type="checkbox" name="skill"><span>Content Writing</span></label>
+                            <label><input type="checkbox" name="skill"><span>Content Writing</span></label>
                             <label><input type="checkbox" name="skill"><span>SEO</span></label>
+                            <label><input type="checkbox" name="skill"><span>JavaScript</span></label>
+                            <label><input type="checkbox" name="skill"><span>UI/UX Design</span></label>
+                            <label><input type="checkbox" name="skill"><span>Digital Marketing</span></label>
+                            <label><input type="checkbox" name="skill"><span>Machine Learning</span></label>
                         </div>
                     </div>
 
@@ -93,13 +130,23 @@
                                 <option>Healthcare</option>
                                 <option>Creative Arts</option>
                                 <option>Finance</option>
+                                <option>Education</option>
+                                <option>Government</option>
                             </select>
-                            <div class="career-type">
-                                <p>Career Type:</p>
-                                <label><input type="checkbox" name="type"><span>Remote</span></label>
-                                <label><input type="checkbox" name="type"><span>In-Office</span></label>
-                                <label><input type="checkbox" name="type"><span>Hybrid</span></label>
-                            </div>
+                            <select>
+                                <option disabled selected>Experience Level</option>
+                                <option>Student</option>
+                                <option>Entry Level</option>
+                                <option>Mid Level</option>
+                                <option>Senior Level</option>
+                            </select>
+                        </div>
+                        <div class="career-type">
+                            <p>Career Type:</p>
+                            <label><input type="checkbox" name="type"><span>Remote</span></label>
+                            <label><input type="checkbox" name="type"><span>In-Office</span></label>
+                            <label><input type="checkbox" name="type"><span>Hybrid</span></label>
+                            <label><input type="checkbox" name="type"><span>Freelance</span></label>
                         </div>
                     </div>
                     
@@ -110,7 +157,23 @@
 
         <section id="dashboard" class="page">
             <div class="dashboard-container container">
-                <h2>Your Career Recommendations</h2>
+                <h2>Your Career Dashboard</h2>
+                <p>Welcome back! Here's your personalized career development plan.</p>
+                
+                <div class="user-profile">
+                    <div class="profile-avatar">A</div>
+                    <div class="profile-info">
+                        <div class="profile-name">Amit Sharma</div>
+                        <div class="profile-details">Age: 21 | Education: B.Tech Computer Science | Location: Delhi</div>
+                        <div class="profile-details">Interests: Programming, AI, Web Development</div>
+                    </div>
+                    <div class="profile-actions">
+                        <button class="profile-action-btn"><i data-feather="edit"></i> Edit Profile</button>
+                        <button class="profile-action-btn"><i data-feather="download"></i> Export Report</button>
+                    </div>
+                </div>
+
+                <h3>Your Career Matches</h3>
                 <p>Based on your profile, here are your top career matches.</p>
                 <div class="results-grid">
                     <div class="career-card">
@@ -123,6 +186,7 @@
                             <span>Python</span>
                             <span>JavaScript</span>
                             <span>APIs</span>
+                            <span>React</span>
                         </div>
                         <button class="roadmap-button">View Roadmap <i data-feather="git-merge"></i></button>
                     </div>
@@ -136,6 +200,7 @@
                             <span>Figma</span>
                             <span>User Research</span>
                             <span>Prototyping</span>
+                            <span>Wireframing</span>
                         </div>
                         <button class="roadmap-button">View Roadmap <i data-feather="git-merge"></i></button>
                     </div>
@@ -149,8 +214,43 @@
                             <span>SQL</span>
                             <span>Excel</span>
                             <span>Tableau</span>
+                            <span>Statistics</span>
                         </div>
                         <button class="roadmap-button">View Roadmap <i data-feather="git-merge"></i></button>
+                    </div>
+                </div>
+
+                <div class="timeline-section">
+                    <h3><i data-feather="calendar"></i> Your Career Timeline</h3>
+                    <div class="timeline">
+                        <div class="timeline-item left">
+                            <div class="timeline-content">
+                                <div class="timeline-date">June 2023</div>
+                                <div class="timeline-text">Complete JavaScript fundamentals course</div>
+                                <button class="timeline-button">Mark Complete</button>
+                            </div>
+                        </div>
+                        <div class="timeline-item right">
+                            <div class="timeline-content">
+                                <div class="timeline-date">August 2023</div>
+                                <div class="timeline-text">Build a portfolio project with React</div>
+                                <button class="timeline-button">Mark Complete</button>
+                            </div>
+                        </div>
+                        <div class="timeline-item left">
+                            <div class="timeline-content">
+                                <div class="timeline-date">October 2023</div>
+                                <div class="timeline-text">Apply for frontend developer internships</div>
+                                <button class="timeline-button">Mark Complete</button>
+                            </div>
+                        </div>
+                        <div class="timeline-item right">
+                            <div class="timeline-content">
+                                <div class="timeline-date">December 2023</div>
+                                <div class="timeline-text">Complete data structures and algorithms course</div>
+                                <button class="timeline-button">Mark Complete</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -161,11 +261,11 @@
                 <h2>Roadmap: <span class="career-title-placeholder">Full-Stack Developer</span></h2>
                  <p>An interactive guide to your career. Click on nodes to explore.</p>
                 <div class="knowledge-graph">
-                    <img src="https://i.ibb.co/3Wf2W0T/knowledge-graph-placeholder.png" alt="Career roadmap knowledge graph">
+                    <div id="graph-container"></div>
+                    <div class="graph-tooltip"></div>
                 </div>
              </div>
         </section>
-
 
         <section id="opportunities" class="page">
             <div class="opportunities-container container">
@@ -179,6 +279,14 @@
                         <option>Remote</option>
                         <option>New York, USA</option>
                         <option>Bengaluru, India</option>
+                        <option>Delhi, India</option>
+                    </select>
+                    <select>
+                        <option>All Types</option>
+                        <option>Internship</option>
+                        <option>Full-time</option>
+                        <option>Part-time</option>
+                        <option>Course</option>
                     </select>
                     <button><i data-feather="filter"></i> Filter</button>
                 </div>
@@ -192,11 +300,14 @@
                         <div class="card-body">
                             <p><i data-feather="map-pin"></i> Remote</p>
                             <p><i data-feather="briefcase"></i> Internship</p>
+                            <p><i data-feather="clock"></i> 3 months</p>
+                            <p><i data-feather="dollar-sign"></i> $3,000/mo</p>
                         </div>
                         <div class="tags">
                             <span>React</span>
                             <span>CSS</span>
                             <span>TypeScript</span>
+                            <span>JavaScript</span>
                         </div>
                         <a href="#" class="apply-button">Apply Now</a>
                     </div>
@@ -208,17 +319,158 @@
                         <div class="card-body">
                             <p><i data-feather="book-open"></i> Online Course</p>
                             <p><i data-feather="clock"></i> Self-Paced</p>
+                            <p><i data-feather="award"></i> Certificate</p>
+                            <p><i data-feather="dollar-sign"></i> Free</p>
                         </div>
                         <div class="tags">
                             <span>Figma</span>
                             <span>UI Principles</span>
+                            <span>User Research</span>
                         </div>
                         <a href="#" class="apply-button">Enroll</a>
                     </div>
-                     </div>
+                    <div class="opportunity-card">
+                         <div class="card-header">
+                            <h5>Backend Developer</h5>
+                            <span>Amazon</span>
+                        </div>
+                        <div class="card-body">
+                            <p><i data-feather="map-pin"></i> Bengaluru, India</p>
+                            <p><i data-feather="briefcase"></i> Full-time</p>
+                            <p><i data-feather="clock"></i> 2+ years experience</p>
+                            <p><i data-feather="dollar-sign"></i> Competitive</p>
+                        </div>
+                        <div class="tags">
+                            <span>Node.js</span>
+                            <span>Python</span>
+                            <span>AWS</span>
+                            <span>API</span>
+                        </div>
+                        <a href="#" class="apply-button">Apply Now</a>
+                    </div>
+                    <div class="opportunity-card">
+                         <div class="card-header">
+                            <h5>Data Science Bootcamp</h5>
+                            <span>UpGrad</span>
+                        </div>
+                        <div class="card-body">
+                            <p><i data-feather="book-open"></i> Bootcamp</p>
+                            <p><i data-feather="clock"></i> 6 months</p>
+                            <p><i data-feather="award"></i> Certificate</p>
+                            <p><i data-feather="dollar-sign"></i> ₹85,000</p>
+                        </div>
+                        <div class="tags">
+                            <span>Python</span>
+                            <span>Machine Learning</span>
+                            <span>Statistics</span>
+                        </div>
+                        <a href="#" class="apply-button">Enroll</a>
+                    </div>
+                </div>
+
+                <div class="college-finder">
+                    <h3><i data-feather="home"></i> Government College Finder</h3>
+                    <p>Discover government colleges that offer programs related to your career interests.</p>
+                    
+                    <div class="filters">
+                        <input type="text" placeholder="Search by course or college...">
+                        <select>
+                            <option>All States</option>
+                            <option>Delhi</option>
+                            <option>Maharashtra</option>
+                            <option>Karnataka</option>
+                            <option>Tamil Nadu</option>
+                        </select>
+                        <select>
+                            <option>All Courses</option>
+                            <option>Engineering</option>
+                            <option>Medical</option>
+                            <option>Arts</option>
+                            <option>Science</option>
+                        </select>
+                        <button><i data-feather="search"></i> Search</button>
+                    </div>
+
+                    <div class="college-grid">
+                        <div class="college-card">
+                            <h4>Indian Institute of Technology Delhi</h4>
+                            <div class="college-detail">
+                                <i data-feather="map-pin"></i> Delhi, India
+                            </div>
+                            <div class="college-detail">
+                                <i data-feather="award"></i> Engineering, Technology
+                            </div>
+                            <div class="college-detail">
+                                <i data-feather="star"></i> NIRF Rank: 2
+                            </div>
+                            <a href="#" class="apply-button">View Details</a>
+                        </div>
+                        <div class="college-card">
+                            <h4>Delhi Technological University</h4>
+                            <div class="college-detail">
+                                <i data-feather="map-pin"></i> Delhi, India
+                            </div>
+                            <div class="college-detail">
+                                <i data-feather="award"></i> Engineering, Management
+                            </div>
+                            <div class="college-detail">
+                                <i data-feather="star"></i> NIRF Rank: 46
+                            </div>
+                            <a href="#" class="apply-button">View Details</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>CareerPath</h3>
+                    <p>Your AI-powered career guidance platform to discover your perfect career path and achieve your professional goals.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i data-feather="facebook"></i></a>
+                        <a href="#" class="social-link"><i data-feather="twitter"></i></a>
+                        <a href="#" class="social-link"><i data-feather="instagram"></i></a>
+                        <a href="#" class="social-link"><i data-feather="linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#landing">Home</a></li>
+                        <li><a href="#assessment">Career Assessment</a></li>
+                        <li><a href="#dashboard">Dashboard</a></li>
+                        <li><a href="#opportunities">Opportunities</a></li>
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Career Guides</a></li>
+                        <li><a href="#">Skill Development</a></li>
+                        <li><a href="#">Resume Builder</a></li>
+                        <li><a href="#">Interview Preparation</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-links">
+                        <li><i data-feather="mail"></i> support@careerpath.com</li>
+                        <li><i data-feather="phone"></i> +91 9876543210</li>
+                        <li><i data-feather="map-pin"></i> New Delhi, India</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 CareerPath. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
     <div class="chatbot-container">
         <div class="chat-bubble">
@@ -246,11 +498,6 @@
             </div>
         </div>
     </div>
-
-
-    <script>
-        feather.replace(); // To initialize Feather Icons
-    </script>
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
